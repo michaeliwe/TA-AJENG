@@ -1,6 +1,9 @@
 <?php
-shell_exec('instagram-scraper telkomuniversity');
-shell_exec('python excel.py');
+$username = $_POST['username'];
+$comments = $_POST['comments'];
+
+shell_exec("instagram-scraper $username --comments -m $comments");
+shell_exec("python excel.py");
 
 session_start();
 $_SESSION["print"] = "true";
