@@ -1,5 +1,5 @@
 <?php
-// shell_exec('instagram-scraper telkomuniversity');
+shell_exec('instagram-scraper telkomuniversity');
 shell_exec('python excel.py');
 
 session_start();
