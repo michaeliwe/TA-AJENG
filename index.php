@@ -28,7 +28,7 @@
                                 <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>
                             </div>
                             <div class="form-group">
-                                <label for="comments">Password</label>
+                                <label for="comments">Number of Comments</label>
                                 <input type="number" class="form-control" id="comments" name="comments" max="200" required>
                             </div>
                             <br>
