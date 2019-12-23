@@ -3,7 +3,20 @@
 <title>TA EZPZ</title>
 </head>
 <body>
-<form method='' action='python.php'>
-<input type='submit' value='GO!'>
+<center>
+    <a href="python.php">
+        <img src="start_button.png" alt="" class="mx-auto" width="150px" style="margin-top:20%">
+    </a>
+<center>
 </body>
+
+<?php
+session_start();
+if (isset($_SESSION["print"])) {
+    echo "<script> window.open('data_comment_id.csv', '_blank'); </script>";
+}
+session_destroy();
+?>
+
+
 </html>
